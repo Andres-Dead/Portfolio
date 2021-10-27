@@ -1,0 +1,27 @@
+.arrow {
+    border: solid #C62A88;
+    border-width: 0 10px 10px 0;
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    
+  }
+  
+
+  .arrow:hover {
+    border: solid #787A91;
+    border-width: 0 10px 10px 0;
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    
+  }

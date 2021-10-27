@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,900&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: floralwhite;
+  background: #0F044C;
+  
+  display: grid;
+  place-items: center;
+  height: 50vh;
+  width: 70vw;
+}
+
+#welcome {
+    text-decoration: none;
+    position: relative;
+    color: #E63E6D;
+    font-size: 10vw;
+    letter-spacing: 8px;
+    width: clamp(200px,50%,600px);
+  }
+
+#welcome::before {
+        content: "Welcome!";
+        position: absolute;
+        color: transparent;
+        background-image: repeating-linear-gradient(
+          45deg,
+          transparent 0,
+          transparent 2px,
+        floralwhite 2px,
+        floralwhite 4px
+        );
+        -webkit-background-clip: text;
+        top: 0px;
+        left: 0;
+        z-index: -1;
+        transition: 1s;
+  }
+
+#welcome::after {
+    content: "Welcome!";
+    position: absolute;
+    color: transparent;
+    background-image: repeating-linear-gradient(
+      135deg,
+      transparent 0,
+      transparent 2px,
+      #420516 2px,
+      #420516 4px
+    );
+    -webkit-background-clip: text;
+    top: 0px;
+    left: 0px;
+    transition: 1s;
+  }
+
+  #welcome:hover:before {
+    top: 10px;
+    left: 10px;
+  }
+  
+  #welcome:hover:after {
+    top: -10px;
+    left: -10px;
+  } 
+  
